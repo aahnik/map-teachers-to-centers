@@ -1,10 +1,16 @@
 import my_io
+import math
 
 
 class Locatable:
     def __init__(self, id):
         self.id = id
         self.x, self.y = my_io.get_unique_pos()
+
+    def get_distance(self, other):
+        dx = self.x - other.x
+        dy = self.y - other.y
+        return(math.sqrt((dx**2)+(dy**2)))
 
 
 class Teacher(Locatable):
