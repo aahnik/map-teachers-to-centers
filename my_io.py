@@ -18,7 +18,7 @@ def randPOS():
 
 
 def randVACANCY():
-    return r.randint(3, 15)
+    return r.randint(3, 12)
 
 
 def is_unique(points, reference):
@@ -40,7 +40,7 @@ def plot_points(locatables, title, m='.'):
         plt.scatter(l.x, l.y, marker=m)
     plt.title(title)
     plt.savefig(f'{os.getcwd()}/data/{title}.png',
-                dpi=100, bbox_inches='tight')
+                dpi=150, bbox_inches='tight')
     plt.show()
 
 
