@@ -3,9 +3,12 @@
     Link : https://github.com/aahnik/mapTeachersToCenters/blob/master/locatable.py  '''
 
 
-def algorithm(teachers, centers):  # first algorithm (v1.0)
-    connections = {}
+def algorithm(teachers, centers):  # algorithm v
+
+    connections = {}  # dictionary: centers as keys and its corresponding list of appointed teachers as values
+
     for teacher in teachers:
+
         factors = []
 
         for center in centers:
