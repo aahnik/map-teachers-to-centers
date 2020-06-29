@@ -1,4 +1,4 @@
-import io
+import my_io
 
 
 class Locatable:
@@ -15,6 +15,6 @@ class Teacher(Locatable):
 
 
 class ExamCenter(Locatable):
-    def __init__(self, id, x, y, vacancy=io.randVACANCY()):
+    def __init__(self, id, x, y, vacancy):
         super(ExamCenter, self).__init__(id, x, y)
         self.vacancy = vacancy

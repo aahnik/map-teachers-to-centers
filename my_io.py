@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 colors = itertools.cycle(['red', 'green', 'orange', 'purple',
                           'black', 'blue', 'pink', 'grey', 'yellow', 'cyan'])
 
-markers = itertools.cycle(['.', 's'])
+# all functions are crafted for use only in context of this program , not for generic use
 
 
 def randPOS():
@@ -17,7 +17,7 @@ def randVACANCY():
 
 
 def is_unique(locatable, reference):
-    return True if locatable.pos not in reference else False
+    return True if (locatable.x, locatable.y) not in reference else False
 
 
 def plot_points(locatables, title, m):
@@ -38,5 +38,14 @@ def connect(connections):
         for sec in secondary:
             plt.scatter(sec.x, sec.y, marker='.', color=color)
             plt.arrow(pri.x, pri.y, sec.x - pri.x, sec.y - pri.y, color=color)
-            
-            
+
+
+def save_to_file(title, locatables, file):
+    with open(file, 'w+') as f:
+        f.write(f'{title}\n')
+        for l in locatables:
+            if title == 'Teachers':
+                f.write(f"id={l.id}\t|\tx={l.x}\t|\ty={l.y}\n")
+            if title == 'ExamCenters':
+                f.write(
+                    f"id={l.id}\t|\tx={l.x}\t|\ty={l.y}\t|\tvacancy={l.vacancy}\n")
