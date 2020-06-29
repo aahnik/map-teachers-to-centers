@@ -36,12 +36,8 @@ def get_unique_pos():
 
 
 def plot_points(locatables, title, m='.'):
-    x = []
-    y = []
     for l in locatables:
-        x.append(l.x)
-        y.append(l.y)
-    plt.scatter(x, y, marker=m)
+        plt.scatter(l.x, l.y, marker=m)
     plt.title(title)
     plt.savefig(f'{os.getcwd()}/data/{title}.png',
                 dpi=300, bbox_inches='tight')
