@@ -1,6 +1,3 @@
-import my_io
-
-
 class Locatable:
     def __init__(self, id, x, y):
         self.id = id
