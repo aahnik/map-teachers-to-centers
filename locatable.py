@@ -1,17 +1,26 @@
+import my_io
+
+
 class Locatable:
-    def __init__(self, id, x, y):
+    def __init__(self, id):
         self.id = id
-        self.x = x
-        self.y = y
+        self.x, self.y = my_io.get_unique_pos()
 
 
 class Teacher(Locatable):
-    def __init__(self, id, x, y, allocated=False):
-        super(Teacher, self).__init__(id, x, y)
-        self.allocated = allocated
+    def __init__(self, id):
+        super(Teacher, self).__init__(id)
+        self.allocated = False
 
 
 class ExamCenter(Locatable):
-    def __init__(self, id, x, y, vacancy):
-        super(ExamCenter, self).__init__(id, x, y)
-        self.vacancy = vacancy
+    def __init__(self, id):
+        super(ExamCenter, self).__init__(id)
+        self.vacancy = my_io.randVACANCY()
+
+    @classmethod
+    def total_vacancy(cls, exam_centers):
+        count = 0
+        for exam_center in exam_centers:
+            count += exam_center.vacancy
+        return count
