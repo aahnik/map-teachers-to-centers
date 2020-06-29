@@ -45,12 +45,16 @@ def plot_points(locatables, title, m='.'):
 
 
 def connect(connections):
-    for pri, secondary in connections:
+    # connections is a dictionary where key is exam center and value is list of teachers
+    for pri, secondary in connections.items():
         color = next(colors)
-        plt.scatter(pri.x, pri.y, marker='s', color=color)
+        plt.scatter(pri.x, pri.y, marker='.', color=color)
         for sec in secondary:
             plt.scatter(sec.x, sec.y, marker='.', color=color)
             plt.arrow(pri.x, pri.y, sec.x - pri.x, sec.y - pri.y, color=color)
+    plt.savefig(f'{os.getcwd()}/data/connections.png',
+                dpi=150, bbox_inches='tight')
+    plt.show()
 
 
 def save_to_file(title, locatables, file):

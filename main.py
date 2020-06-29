@@ -1,12 +1,14 @@
 from locatable import Teacher, ExamCenter
-import my_io
+from my_io import generateSaveAndPlot, connect
+from my_algo import algorithm
 
 
 def main():
-    centers = my_io.generateSaveAndPlot(ExamCenter, 20, 'ExamCenters')
-    vacancy = ExamCenter.total_vacancy(exam_centers)
-    teachers = my_io.generateSaveAndPlot(Teacher, vacancy, 'Teachers')
-
+    centers = generateSaveAndPlot(ExamCenter, 20, 'ExamCenters')
+    vacancy = ExamCenter.total_vacancy(centers)
+    teachers = generateSaveAndPlot(Teacher, vacancy, 'Teachers')
+    connections = algorithm(teachers, centers)
+    connect(connections)
 
 
 if __name__ == "__main__":
