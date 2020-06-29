@@ -3,7 +3,7 @@
     Link : https://github.com/aahnik/mapTeachersToCenters/blob/master/locatable.py  '''
 
 
-def algorithm(teachers, centers):
+def algorithm(teachers, centers):  # first algorithm (v1.0)
     connections = {}
     for teacher in teachers:
         factors = []
