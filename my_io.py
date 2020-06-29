@@ -1,3 +1,4 @@
+import os
 import random as r
 import itertools
 import matplotlib.pyplot as plt
@@ -34,7 +35,7 @@ def get_unique_pos():
         return get_unique_pos()
 
 
-def plot_points(locatables, title, m='*'):
+def plot_points(locatables, title, m='.'):
     x = []
     y = []
     for l in locatables:
@@ -42,6 +43,8 @@ def plot_points(locatables, title, m='*'):
         y.append(l.y)
     plt.scatter(x, y, marker=m)
     plt.title(title)
+    plt.savefig(f'{os.getcwd()}/data/{title}.png',
+                dpi=300, bbox_inches='tight')
     plt.show()
 
 
@@ -70,7 +73,7 @@ def generateSaveAndPlot(Locatable, count, title):
     for i in range(count):
         obj = Locatable(i)
         locatable_objects.append(obj)
-    file = f'{title}.txt'
+    file = f'{os.getcwd()}/data/{title}.txt'
     save_to_file(title, locatable_objects, file)
     plot_points(locatable_objects, title)
     return locatable_objects
