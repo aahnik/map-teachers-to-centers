@@ -4,7 +4,7 @@ import my_io
 
 def main():
     centers = my_io.generateSaveAndPlot(ExamCenter, 20, 'ExamCenters')
-    vacancy = ExamCenter.total_vacancy(centers)
+    vacancy = ExamCenter.total_vacancy(exam_centers)
     teachers = my_io.generateSaveAndPlot(Teacher, vacancy, 'Teachers')
 
 
