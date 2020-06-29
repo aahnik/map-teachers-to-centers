@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 # set of all co-ordinates involved in the problem, used to prevent overlapping points
 reference = set()
+
 colors = itertools.cycle(['red', 'green', 'orange', 'purple',
                           'black', 'blue', 'pink', 'grey', 'yellow', 'cyan'])
 
