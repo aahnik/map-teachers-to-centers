@@ -1,6 +1,6 @@
-from locatable import Teacher, ExamCenter
-from my_io import generateSaveAndPlot, connect
-from my_algo import algorithm
+from locatable import Teacher, ExamCenter   # AAHNIK 2020
+from my_io import generateSaveAndPlot, connect   # AAHNIK 2020
+from my_algo import algorithm   # AAHNIK 2020
 
 
 def main():
@@ -13,3 +13,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+# AAHNIK 2020

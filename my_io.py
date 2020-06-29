@@ -13,12 +13,10 @@ colors = itertools.cycle(['red', 'green', 'orange', 'purple',
 # all functions are crafted for use only in context of this program , not for generic use
 
 
-def randPOS():
-    return r.randint(1000, 9999) / 100, r.randint(1000, 9999) / 100
+def randPOS(): return r.randint(1000, 9999) / 100, r.randint(1000, 9999) / 100
 
 
-def randVACANCY():
-    return r.randint(3, 12)
+def randVACANCY(): return r.randint(3, 12)
 
 
 def is_unique(points, reference):
@@ -44,8 +42,8 @@ def plot_points(locatables, title, m='.'):
     plt.show()
 
 
+# connections is a dictionary where key is exam center and value is list of teachers
 def connect(connections):
-    # connections is a dictionary where key is exam center and value is list of teachers
     for pri, secondary in connections.items():
         color = next(colors)
         plt.scatter(pri.x, pri.y, marker='.', color=color)
@@ -77,3 +75,6 @@ def generateSaveAndPlot(Locatable, count, title):
     save_to_file(title, locatable_objects, file)
     plot_points(locatable_objects, title)
     return locatable_objects
+
+
+# AAHNIK 2020

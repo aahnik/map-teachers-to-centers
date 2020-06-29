@@ -1,4 +1,4 @@
-import my_io
+import my_io   # AAHNIK 2020
 import math
 
 
@@ -30,3 +30,5 @@ class ExamCenter(Locatable):
         for exam_center in exam_centers:
             count += exam_center.vacancy
         return count
+
+# AAHNIK 2020
