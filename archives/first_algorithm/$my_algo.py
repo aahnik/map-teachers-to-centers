@@ -1,3 +1,8 @@
+''' teachers and centers are lists of Teacher objects and ExamCenter objects respectively 
+    class Teacher and class ExamCentre and defined in locatable.py 
+    Link : https://github.com/aahnik/mapTeachersToCenters/blob/master/locatable.py  '''
+
+
 def algorithm(teachers, centers):
     connections = {}
     for teacher in teachers:
