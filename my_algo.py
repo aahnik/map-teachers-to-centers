@@ -22,7 +22,7 @@ def sort(locatables, focal_centre):
         locatables[j+1] = key
 
 
-def run_algorithm(teachers, centers):  # algorithm v2.0
+def connect(teachers, centers):  # algorithm v2.0
     for center in centers:
         active_teachers = [t for t in teachers if t.allocated == False]
 

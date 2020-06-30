@@ -43,7 +43,7 @@ def plot_points(locatables, title, m='.'):
 
 
 # connections is a dictionary where key is exam center and value is list of teachers
-def connect(centers):
+def plot_connections(centers):
     for center in centers:
         color = next(colors)
         center.connect_with_teachers(plt, color)

@@ -1,6 +1,6 @@
 from locatable import Locatable, Teacher, ExamCenter   # AAHNIK 2020
-from my_io import generateSaveAndPlot, connect   # AAHNIK 2020
-from my_algo import sort, run_algorithm   # AAHNIK 2020
+from my_io import generateSaveAndPlot, plot_connections   # AAHNIK 2020
+from my_algo import sort, connect   # AAHNIK 2020
 
 
 def main():
@@ -14,8 +14,8 @@ def main():
 
     sort(centers, origin)
 
-    run_algorithm(teachers, centers)
-    connect(centers)
+    connect(teachers, centers)
+    plot_connections(centers)
 
 
 if __name__ == "__main__":
