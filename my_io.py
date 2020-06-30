@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 # set of all co-ordinates involved in the problem, used to prevent overlapping points
 reference = set()
 
-colors = itertools.cycle(['red', 'green', 'orange', 'purple',
+colors = itertools.cycle(['orange', 'green',  'purple',
                           'black', 'blue', 'pink', 'grey', 'yellow', 'cyan'])
 
-
+markers = itertools.cycle(['s', '.'])
 # all functions are crafted for use only in context of this program , not for generic use
 
 
@@ -33,9 +33,11 @@ def get_unique_pos():
         return get_unique_pos()
 
 
-def plot_points(locatables, title, m='.'):
+def plot_points(locatables, title):
+    m = next(markers)
+    c = next(colors)
     for l in locatables:
-        plt.scatter(l.x, l.y, marker=m,color='black')
+        plt.scatter(l.x, l.y, marker=m, color=c)
     plt.title(title)
     plt.savefig(f'{os.getcwd()}/data/{title}.png',
                 dpi=150, bbox_inches='tight')

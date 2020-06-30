@@ -33,7 +33,7 @@ class ExamCenter(Locatable):
         return count
 
     def connect_with_teachers(self, plt, color):
-        plt.scatter(self.x, self.y, marker='.', color=color)
+        plt.scatter(self.x, self.y, marker='s', color='red')
         for t in self.allocated_teachers:
             plt.scatter(t.x, t.y, marker='.', color=color)
             plt.arrow(self.x, self.y, t.x - self.x, t.y - self.y, color=color)
