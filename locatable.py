@@ -32,7 +32,7 @@ class ExamCenter(Locatable):
             count += exam_center.vacancy
         return count
 
-    def connect_with_teachers(self, plt, color):
+    def plot_connect_with_teachers(self, plt, color):
         plt.scatter(self.x, self.y, marker='s', color='red')
         for t in self.allocated_teachers:
             plt.scatter(t.x, t.y, marker='.', color=color)
