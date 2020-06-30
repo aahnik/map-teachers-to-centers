@@ -1,0 +1,21 @@
+ExamCenters
+id=0	|	x=47.39	|	y=19.69	|	vacancy=8
+id=1	|	x=56.9	|	y=25.63	|	vacancy=3
+id=2	|	x=16.91	|	y=73.38	|	vacancy=12
+id=3	|	x=18.38	|	y=89.31	|	vacancy=9
+id=4	|	x=91.44	|	y=61.3	|	vacancy=10
+id=5	|	x=21.73	|	y=30.04	|	vacancy=5
+id=6	|	x=64.07	|	y=90.02	|	vacancy=7
+id=7	|	x=33.73	|	y=22.04	|	vacancy=5
+id=8	|	x=66.61	|	y=50.05	|	vacancy=8
+id=9	|	x=51.66	|	y=31.42	|	vacancy=4
+id=10	|	x=34.31	|	y=57.23	|	vacancy=5
+id=11	|	x=79.8	|	y=80.08	|	vacancy=10
+id=12	|	x=90.9	|	y=35.87	|	vacancy=10
+id=13	|	x=11.76	|	y=45.2	|	vacancy=10
+id=14	|	x=94.71	|	y=75.09	|	vacancy=12
+id=15	|	x=44.24	|	y=41.92	|	vacancy=8
+id=16	|	x=58.82	|	y=79.44	|	vacancy=4
+id=17	|	x=13.26	|	y=19.83	|	vacancy=9
+id=18	|	x=65.64	|	y=74.69	|	vacancy=4
+id=19	|	x=30.86	|	y=67.13	|	vacancy=11
