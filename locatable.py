@@ -23,6 +23,7 @@ class ExamCenter(Locatable):
     def __init__(self, id):
         super(ExamCenter, self).__init__(id)
         self.vacancy = my_io.randVACANCY()
+        self.allocated_teachers = []
 
     @classmethod
     def total_vacancy(cls, exam_centers):
@@ -31,4 +32,9 @@ class ExamCenter(Locatable):
             count += exam_center.vacancy
         return count
 
+    def connect_with_teachers(self, plt, color):
+        plt.scatter(self.x, self.y, marker='.', color=color)
+        for t in self.allocated_teachers:
+            plt.scatter(t.x, t.y, marker='.', color=color)
+            plt.arrow(self.x, self.y, t.x - self.x, t.y - self.y, color=color)
 # AAHNIK 2020

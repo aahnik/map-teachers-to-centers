@@ -43,13 +43,10 @@ def plot_points(locatables, title, m='.'):
 
 
 # connections is a dictionary where key is exam center and value is list of teachers
-def connect(connections):
-    for pri, secondary in connections.items():
+def connect(centers):
+    for center in centers:
         color = next(colors)
-        plt.scatter(pri.x, pri.y, marker='.', color=color)
-        for sec in secondary:
-            plt.scatter(sec.x, sec.y, marker='.', color=color)
-            plt.arrow(pri.x, pri.y, sec.x - pri.x, sec.y - pri.y, color=color)
+        center.connect_with_teachers(plt, color)
     plt.savefig(f'{os.getcwd()}/data/connections.png',
                 dpi=150, bbox_inches='tight')
     plt.show()
