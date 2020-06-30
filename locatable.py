@@ -37,4 +37,6 @@ class ExamCenter(Locatable):
         for t in self.allocated_teachers:
             plt.scatter(t.x, t.y, marker='.', color=color)
             plt.arrow(self.x, self.y, t.x - self.x, t.y - self.y, color=color)
+
+
 # AAHNIK 2020

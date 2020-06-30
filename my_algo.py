@@ -23,14 +23,10 @@ def sort(locatables, focal_centre):
 
 
 def run_algorithm(teachers, centers):  # algorithm v2.0
-
-    connections = {}  # dictionary: centers as keys and its corresponding list of appointed teachers as values
-
     for center in centers:
         active_teachers = [t for t in teachers if t.allocated == False]
 
         sort(active_teachers, center)
-        connections[center] = []
 
         for teacher in active_teachers:
             if center.vacancy == 0:
@@ -38,8 +34,5 @@ def run_algorithm(teachers, centers):  # algorithm v2.0
             teacher.allocated = True
             center.allocated_teachers.append(teacher)
             center.vacancy -= 1
-
-    
-
 
 # AAHNIK 2020
