@@ -35,7 +35,7 @@ def connect(teachers, centers):  # algorithm v2.0
             center.allocated_teachers.append(teacher)
             center.vacancy -= 1
 
-def optimize(centers):
+# def optimize(centers):
     pass
 
 # AAHNIK 2020
