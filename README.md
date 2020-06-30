@@ -15,6 +15,7 @@ Mapping Teachers to nearest Exam Centers and simultaneosly making sure that all 
 ## Sample Input of Teachers 
 (total number of teachers is about 4 times the total required vacancy in exam Centers)
 ![Teachers](results/Teachers.png)
+
 [Click Here](https://github.com/aahnik/mapTeachersToCenters/blob/master/results/Teachers.txt) to view full tabulated data for each teacher
 
 
@@ -23,4 +24,5 @@ Mapping Teachers to nearest Exam Centers and simultaneosly making sure that all 
 
 
 _**Any Suggestions / Ideas How to improve the Algorithm ??**_
+
 [Contact me](https://t.me/AahniKDaw)
