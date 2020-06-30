@@ -48,7 +48,7 @@ def plot_points(locatables, title):
 def plot_connections(centers):
     for center in centers:
         color = next(colors)
-        center.connect_with_teachers(plt, color)
+        center.plot_connect_with_teachers(plt, color)
     plt.savefig(f'{os.getcwd()}/data/connections.png',
                 dpi=150, bbox_inches='tight')
     plt.show()
