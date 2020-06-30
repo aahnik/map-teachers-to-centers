@@ -9,6 +9,7 @@ Mapping Teachers to nearest Exam Centers and simultaneosly making sure that all 
 
 ## Sample Input of Exam Centers
 ![Exam Centers](results/ExamCenters.png)
+
 [Click Here](https://github.com/aahnik/mapTeachersToCenters/blob/master/results/ExamCenters.txt) to view full tabulated data and vacancies in each center 
 
 
