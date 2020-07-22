@@ -1,4 +1,4 @@
-from locatable import Locatable, Teacher, ExamCenter   # AAHNIK 2020
+from locatable import Node, Teacher, ExamCenter   # AAHNIK 2020
 from my_io import generateSaveAndPlot, plot_connections   # AAHNIK 2020
 from my_algo import sort, connect   # AAHNIK 2020
 
@@ -10,7 +10,7 @@ def main(n):
     count = int((vacancy*n)//1)  # no of teachers
     teachers = generateSaveAndPlot(Teacher, count, 'Teachers')
     # no of teachers must be greater than no of vacancies
-    origin = Locatable(0)
+    origin = Node(0)
     origin.x, origin.y = 50, 50
 
     sort(centers, origin)

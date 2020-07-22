@@ -2,7 +2,7 @@ import my_io   # AAHNIK 2020
 import math
 
 
-class Locatable:
+class Node:
     def __init__(self, id):
         self.id = id
         self.x, self.y = my_io.get_unique_pos()
@@ -13,13 +13,13 @@ class Locatable:
         return(math.sqrt((dx**2)+(dy**2)))
 
 
-class Teacher(Locatable):
+class Teacher(Node):
     def __init__(self, id):
         super(Teacher, self).__init__(id)
         self.allocated = False
 
 
-class ExamCenter(Locatable):
+class ExamCenter(Node):
     def __init__(self, id):
         super(ExamCenter, self).__init__(id)
         self.vacancy = my_io.randVACANCY()
