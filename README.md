@@ -1,7 +1,7 @@
 # mapTeachersToCenters
 
 
-![](https://raw.githubusercontent.com/aahnik/aahnik/master/promoted/general.gif)
+[![promoted](https://raw.githubusercontent.com/aahnik/aahnik/master/promoted/general.gif)](https://aahnik.github.io/aahnik/promoted/general.html)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/aahnik/mapteacherstocenters/badge)](https://www.codefactor.io/repository/github/aahnik/mapteacherstocenters)
 
