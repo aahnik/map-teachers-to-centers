@@ -1,11 +1,6 @@
 # mapTeachersToCenters
 
-
-[![promoted](https://raw.githubusercontent.com/aahnik/aahnik/master/promoted/general.gif)](https://aahnik.github.io/aahnik/promoted/general.html)
-
-[![CodeFactor](https://www.codefactor.io/repository/github/aahnik/mapteacherstocenters/badge)](https://www.codefactor.io/repository/github/aahnik/mapteacherstocenters)
-
-**Mapping Teachers to nearest Exam Centers and simultaneosly making sure that all the Vacancies(Requirements) of each Center is fulfilled**
+Mapping Teachers to nearest Exam Centers and simultaneosly making sure that all the Vacancies(Requirements) of each Center is fulfilled.
 
 
 [Watch Trailer](https://youtu.be/N4-TRZT72bo)
